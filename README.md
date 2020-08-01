@@ -1,3 +1,37 @@
+# An AI reply site
+### A website that gives you a reply from the [alexa-bot-api](https://www.npmjs.com/package/alexa-bot-api) 
+
+A forked project - [original](https://github.com/second-state/ssvm-nodejs-starter)
+
+### Notes [IMPORTANT]
+```
+Go to the following directory ./node/app.js
+Make sure you have enabled the code option you wish to use.. This is important since the default is curl
+If you enable the site make sure to comment the curl request code, the only difference is the addition of HTML formatting and allowing for a simple user interface.
+Enabling the site and using a curl request will still work, but will cause the result to likely have HTML code.
+```
+
+### Set-up
+```
+$ git clone https://github.com/DPulavarthy/nodejs-starter
+$ cd /nodejs-starter/
+$ npm i
+```
+### Run
+```
+$ node node/app.js 
+or 
+$ cd /node/
+$ node app.js
+```
+### Result
+```
+Visit: http://hostname:3000 (running the program will log the link to the site in the console)
+Enter a text/statement/question and get a reply from the alexa-bot-api
+```
+
+# <-- ORIGINAL README CONTENT BELOW HERE -->
+
 # Getting started
 
 ![Build and test](https://github.com/second-state/ssvm-nodejs-starter/workflows/Build%20and%20test/badge.svg)

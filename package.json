@@ -1,0 +1,27 @@
+{
+  "name": "ssvm-nodejs-starter",
+  "version": "1.0.0",
+  "description": "AI Reply",
+  "main": "node/app.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "alexa-bot-api": "^0.1.2",
+    "ssvm": "^0.4.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DPulavarthy/nodejs-starter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DPulavarthy/nodejs-starter/issues"
+  },
+  "homepage": "https://github.com/DPulavarthy/nodejs-starter#readme"
+}
