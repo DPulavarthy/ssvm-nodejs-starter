@@ -19,6 +19,7 @@ $ npm i
 ```
 ### Run
 ```
+$ ssvmup build
 $ node node/app.js 
 or 
 $ cd /node/
