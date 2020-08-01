@@ -29,6 +29,7 @@ $ node app.js
 Visit: http://hostname:3000 (running the program will log the link to the site in the console)
 Enter a text/statement/question and get a reply from the alexa-bot-api
 ```
+![Example](https://i.imgur.com/1PLEW9G.png)
 
 # <-- ORIGINAL README CONTENT BELOW HERE -->
 
