@@ -8,9 +8,7 @@ let hostname = '0.0.0.0', port = 3000, alexa = require(`alexa-bot-api`), server 
   else { new alexa(`aw2plm`).getReply(queryObject['text']).then(reply => { let result = require('../pkg/ssvm_nodejs_starter_lib.js').say(reply); res.end(final(result)); }); }
   // Yes, I know the ^[API key] is posted, it is a public key from https://www.npmjs.com/package/alexa-bot-api, no need to notify me :)
 });
-
-server.listen(port, hostname, () => { console.log(`Server running at [https://${hostname}:${port}/?text=TEXT_HERE]`); });
-
+server.listen(port, hostname, () => { console.log(`Server running at [http://${hostname}:${port}/?text=TEXT_HERE]`); });
 function final(input) {
   let toappend = [];
   toappend.push(`<!DOCTYPE html><html lang="en"><head><title>AI Reply</title></head><body style="background-color:rgba(0,0,0,0.5);">`);
@@ -30,7 +28,7 @@ let hostname = '0.0.0.0', port = 3000, alexa = require(`alexa-bot-api`), server 
   let queryObject = require('url').parse(req.url,true).query;
   if (!queryObject['text']) { res.end(`ERROR: Please use the proper format: http://${hostname}:${port}/?text=TEXT_HERE`); } 
   else { new alexa(`aw2plm`).getReply(queryObject['text']).then(reply => { let result = require('../pkg/ssvm_nodejs_starter_lib.js').say(reply); res.end(result); }); }
-  // Yes, I know the ^[API key] is posted, it is a public key from https://www.npmjs.com/package/alexa-bot-api, no need to notify me :)
+  // Yes, I know the ^[API key] is posted, it is a public key from http://www.npmjs.com/package/alexa-bot-api, no need to notify me :)
 });
 
-server.listen(port, hostname, () => { console.log(`Server running at [https://${hostname}:${port}/?text=TEXT_HERE]`); });
+server.listen(port, hostname, () => { console.log(`Server running at [http://${hostname}:${port}/?text=TEXT_HERE]`); });
