@@ -22,7 +22,7 @@ $ docker run -p 3000:3000 --rm -it -v $(pwd):/app secondstate/ssvm-nodejs-starte
 From a second terminal window, you can test the local server.
 
 ```
-$ curl http://localhost:3000/?name=SSVM
+$ curl http://localhost:3000/?text=SSVM
 hello SSVM
 ```
 
